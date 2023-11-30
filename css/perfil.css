@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D7BFFD;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Header start */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 42px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    width: 180px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #7F22F6;
+    height: 9vh;
+    box-shadow: 0 0 20px -5px black;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    height: 30px;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-size: 24px;
+}
+
+.nav-list li:hover {
+    border-bottom: 3px solid pink;
+}
+
+/* Header end */
+
+
+
+/* Anim Typing start*/
+
+.typing {
+    border-right: 2px solid #fff;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(7) infinite normal,
+        typing 3s steps(7) .5s normal;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 4.5em;
+    }
+
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Anim Typing end*/
